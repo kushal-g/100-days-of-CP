@@ -137,3 +137,63 @@ public:
     }
 };
 ```
+<br><br><br>
+### Day 2: April 30, 2021 
+<br>
+
+**Today's Progress**: Completed the following 3 Questions:
+<ol>
+    <li>Sort Array by Increasing Frequency: Given an array of integers nums, sort the array in increasing order based on the frequency of the values. If multiple values have the same frequency, sort them in decreasing order. Return the sorted array.</li>
+    <br>
+    <li>Goat Latin: 
+
+A sentence S is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.
+
+We would like to convert the sentence to "Goat Latin" (a made-up language similar to Pig Latin.)
+
+The rules of Goat Latin are as follows:
+
+If a word begins with a vowel (a, e, i, o, or u), append "ma" to the end of the word.
+For example, the word 'apple' becomes 'applema'.
+ 
+If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add "ma".
+For example, the word "goat" becomes "oatgma".
+ 
+Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
+For example, the first word gets "a" added to the end, the second word gets "aa" added to the end and so on.
+Return the final sentence representing the conversion from S to Goat Latin. </li>
+    <br>
+    <li>Island Perimeter: 
+    
+You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water.
+
+Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
+
+The island doesn't have "lakes", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.</li>
+</ol>
+<br><br>
+
+**Thoughts:**
+
+<ol>
+    <li>Sort Array by Increasing Frequency: Had a straightforward approach of using a sort function and calling the sort method. I also found an interesting second approach where we formed buckets according to frequency and then added elements to a new array according to that.</li>
+    <br>
+    <li>Goat Latin: Pretty straightforward. Had to do exactly what it said.</li>
+    <br>
+    <li>Island Perimeter: Used DFS to find all elements of the island and checked the number of sides which faced sea for every block of island and summed them to get the perimeter. Saw an approach which didn't use DFS and just iterated over entire matrix to find the same sum which was surprisingly faster. Weird.</li>
+</ol>
+<br><br>
+
+**Link(s) to work:** 
+<ol>
+    <li>Sort Array by Increasing Frequency: 
+        <ul>
+            <li><a href="https://leetcode.com/submissions/detail/487140869/" target="_blank"> Approach 1</a></li>
+            <li><a href="https://leetcode.com/submissions/detail/487145550/" target="_blank">Approach 2</a></li>
+        </ul>
+    </li>
+    <br>
+    <li><a href="https://leetcode.com/submissions/detail/487152843/" target="_blank">Goat Latin</a></li>
+    <br>
+    <li><a href="https://leetcode.com/submissions/detail/487165537/" target="_blank">Island Perimeter</a></li>
+</ol>
