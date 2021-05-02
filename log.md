@@ -259,3 +259,60 @@ Return true if and only if Alice wins the game, assuming both players play optim
         </ul>
     </li>
 </ol>
+
+<br><br><br>
+
+### Day 4: May 2, 2021 
+<br>
+
+**Today's Progress**: Completed the following 3 Questions:
+<ol>
+    <li>Course Schedule III:
+
+There are n different online courses numbered from 1 to n. You are given an array courses where courses[i] = [durationi, lastDayi] indicate that the ith course should be taken continuously for durationi days and must be finished before or on lastDayi.
+
+You will start on the 1st day and you cannot take two or more courses simultaneously.
+
+Return the maximum number of courses that you can take.</li>
+    <br>
+    <li>Smallest Range I: 
+    
+Given an array A of integers, for each integer A[i] we may choose any x with -K <= x <= K, and add x to A[i].
+
+After this process, we have some array B.
+
+Return the smallest possible difference between the maximum value of B and the minimum value of B.</li>
+    <br>
+    <li>Next Greater Element I: 
+    
+You are given two integer arrays nums1 and nums2 both of unique elements, where nums1 is a subset of nums2.
+
+Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
+
+The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, return -1 for this number.
+
+</li>
+</ol>
+<br><br>
+
+**Thoughts:**
+
+<ol>
+    <li>Course Schedule III: Very difficult question. Couldn't solve on my own. The only thing I could figure out was I'm going to need to sort the jobs according to deadlines. I had to look up the solution for rest.</li>
+    <br>
+    <li>Smallest Range I: This was kind of a tricky question. Really happy I could think of the trick to solve it and then did it!</li>
+    <br>
+    <li>Next Greater Element I: This was a nice question. To find next greater element for every number in O(n), I figured out I'm going to need to use stack. Very happy I could at least think of the data structure I will need. Sadly I couldn't think of the exact logic. Had to look it up. So Kushal, remember this, when you need to find NEXT GREATER ELEMENT, you need to use STACK and look at DECREASING SUBSEQUENCE.</li>
+</ol>
+<br><br>
+
+**Link(s) to work:** 
+<ol>
+    <li>
+        <a href="https://leetcode.com/submissions/detail/487995574/" target="_blank">Course Schedule III</a>
+    </li>
+    <br>
+    <li><a href="https://leetcode.com/submissions/detail/488000876/" target="_blank">Smallest Range I</a></li>
+    <br>
+    <li><a href="https://leetcode.com/submissions/detail/488012754/" target="_blank">Next Greater Element I</a></li>
+</ol>
