@@ -197,3 +197,65 @@ The island doesn't have "lakes", meaning the water inside isn't connected to the
     <br>
     <li><a href="https://leetcode.com/submissions/detail/487165537/" target="_blank">Island Perimeter</a></li>
 </ol>
+<br><br><br>
+
+### Day 3: May 1, 2021 
+<br>
+
+**Today's Progress**: Completed the following 3 Questions:
+<ol>
+    <li>Prefix and Suffix Search:
+
+Design a special dictionary which has some words and allows you to search the words in it by a prefix and a suffix.
+
+Implement the WordFilter class:
+
+WordFilter(string[] words) Initializes the object with the words in the dictionary.
+f(string prefix, string suffix) Returns the index of the word in the dictionary which has the prefix prefix and the suffix suffix. If there is more than one valid index, return the largest of them. If there is no such word in the dictionary, return -1.</li>
+    <br>
+    <li>Find the Distance Value Between Two Arrays: 
+    
+Given two integer arrays arr1 and arr2, and the integer d, return the distance value between the two arrays.
+
+The distance value is defined as the number of elements arr1[i] such that there is not any element arr2[j] where |arr1[i]-arr2[j]| <= d.</li>
+    <br>
+    <li>Divisor Game: 
+    
+Alice and Bob take turns playing a game, with Alice starting first.
+
+Initially, there is a number n on the chalkboard. On each player's turn, that player makes a move consisting of:
+
+Choosing any x with 0 < x < n and n % x == 0.
+Replacing the number n on the chalkboard with n - x.
+Also, if a player cannot make a move, they lose the game.
+
+Return true if and only if Alice wins the game, assuming both players play optimally.</li>
+</ol>
+<br><br>
+
+**Thoughts:**
+
+<ol>
+    <li>Prefix and Suffix Search: Surprisingly, this is a hard question on leetcode! I could think of the dictionary solution easily once my brute force solution gave me TLE. However, I missed one tiny thing where I needed an extra character to add between suffix and prefix to differentiate between similar strings generated from different prefixes and suffixes. All in all, a good brain workout.</li>
+    <br>
+    <li>Find the Distance Value Between Two Arrays: Pretty straightforward. Had to do exactly what it said.</li>
+    <br>
+    <li>Divisor Game: Kinda happy I could think in terms of DP and solve this question. However should have noticed a much more obvious pattern where it's true for even numbers and false for odd numbers. I thought about it for a sec but then for some reason didn't pursue it.</li>
+</ol>
+<br><br>
+
+**Link(s) to work:** 
+<ol>
+    <li>
+        <a href="https://leetcode.com/submissions/detail/487566058/" target="_blank">Prefix and Suffix Search</a>
+    </li>
+    <br>
+    <li><a href="https://leetcode.com/submissions/detail/487567624/" target="_blank">Find the Distance Value Between Two Arrays</a></li>
+    <br>
+    <li>Divisor Game:
+        <ul>
+        <li><a href="https://leetcode.com/submissions/detail/487572529/">DP Approach</a></li>
+        <li><a href="https://leetcode.com/submissions/detail/487573023/">O(1) Approach</a></li>
+        </ul>
+    </li>
+</ol>
